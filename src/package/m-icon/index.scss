@@ -1,0 +1,15 @@
+// _Message css
+
+@import "./iconfont/iconfont.css";
+@import "@/styles/mp.scss";
+@import "@/styles/flex.scss";
+.m-icon {
+  display: inline-block;
+}
+.m-iconfont_icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  font-size: inherit;
+  line-height: 1em;
+}

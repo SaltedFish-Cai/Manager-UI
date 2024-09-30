@@ -1,0 +1,90 @@
+/* 外边距、内边距全局样式 */
+@for $i from 0 through 40 {
+  .mt#{$i} {
+    margin-top: #{$i}px !important;
+  }
+  .mr#{$i} {
+    margin-right: #{$i}px !important;
+  }
+  .mb#{$i} {
+    margin-bottom: #{$i}px !important;
+  }
+  .ml#{$i} {
+    margin-left: #{$i}px !important;
+  }
+  .pt#{$i} {
+    padding-top: #{$i}px !important;
+  }
+  .pr#{$i} {
+    padding-right: #{$i}px !important;
+  }
+  .pb#{$i} {
+    padding-bottom: #{$i}px !important;
+  }
+  .pl#{$i} {
+    padding-left: #{$i}px !important;
+  }
+}
+
+/* 固定高度 */
+@for $i from 300 through 1000 {
+  .h#{$i} {
+    height: #{$i}px !important;
+  }
+}
+
+/* 固定宽度 */
+@for $i from 80 through 1000 {
+  .w#{$i} {
+    width: #{$i}px !important;
+  }
+}
+
+/* 固定高度 */
+@for $i from 100 through 1000 {
+  .mh#{$i} {
+    min-height: #{$i}px !important;
+  }
+}
+
+/* 固定高度 */
+@for $i from 10 through 40 {
+  .fs#{$i} {
+    font-size: #{$i}px !important;
+  }
+}
+
+// 滚动条
+.m-table-styles,
+.m-dialog-class,
+.m-tabs {
+  .el-scrollbar__bar.is-horizontal {
+    height: var(--el-scrollbar-width);
+    // background-color: var(--el-border-color-light);
+    .el-scrollbar__thumb {
+      background-color: #c1c1c1;
+      opacity: 1;
+      &:active,
+      &:hover {
+        background-color: var(--el-color-primary);
+        opacity: 1;
+      }
+    }
+  }
+  .el-scrollbar__bar.is-vertical {
+    width: var(--el-scrollbar-width);
+    // background-color: var(--el-border-color-light);
+    .el-scrollbar__thumb {
+      background-color: #c1c1c1;
+      opacity: 1;
+      &:active,
+      &:hover {
+        background-color: var(--el-color-primary);
+        opacity: 1;
+      }
+    }
+  }
+}
+client-only {
+  height: 100% !important;
+}

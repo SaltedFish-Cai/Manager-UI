@@ -1,0 +1,117 @@
+{
+  "private": true,
+  "name": "document-to-dms",
+  "version": "1.0.0",
+  "description": "document-to-dms",
+  "main": "index.js",
+  "module": "index.js",
+  "types": "index.d.ts",
+  "type": "module",
+  "files": [
+    "demo.vue",
+    "index.js",
+    "README.md",
+    "index.d.ts"
+  ],
+  "author": "Qi.Cai",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "create:index": "node ./script/create-index --mode index-ui",
+    "dev": "rimraf -G ./script/demo.vue && npm run create:index && node ./script/vitepress/bin/vitepress.js dev vitepress-ui",
+    "update-version": "node ./script/update-version.js",
+    "tsc": "vue-tsc",
+    "build-tsc": "rimraf -G ./ManagerUI && vue-tsc && vite --config ./src/package/vite.config.ts build",
+    "build": "rimraf -G ./ManagerUI && vite --config ./src/package/vite.config.ts build",
+    "build:pkg": "npm run update-version && vite --config ./src/package/vite.config.ts build",
+    "build:dome": "npm run build:es && npm run build:dome",
+    "build:es": "rimraf -G ./script/src && tsc -b -f",
+    "build:doc": "rimraf -G ./docs && npm run create:index && node ./script/vitepress/bin/vitepress.js build vitepress-ui",
+    "build:local-doc": "rimraf -G ./docs && node ./script/vitepress/bin/vitepress.js build --base /public/docs/ --outDir ./egg/app/public/docs/",
+    "update-git": "git rm -r --cached . && git add .",
+    "serve": "node ./script/vitepress/bin/vitepress.js serve",
+    "release": "node script/release && rimraf -G ./script/src",
+    "lint:eslint-d": "eslint src/**/*{.ts,.vue}",
+    "lint:eslint": "eslint --fix --ext .ts,.vue ./src",
+    "lint:lint-staged": "lint-staged",
+    "prepare": "husky install",
+    "commit": "node ./script/cz-customizable/standalone.js"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "@element-plus/icons-vue": "2.0.10",
+    "@femm/prettier": "^1.0.1",
+    "@femm/verify-commit": "^1.0.1",
+    "@mdit-vue/shared": "^0.12.0",
+    "@types/node": "^18.13.0",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
+    "@vitejs/plugin-vue": "^4.1.0",
+    "@vitejs/plugin-vue-jsx": "^3.0.1",
+    "autoprefixer": "^10.4.14",
+    "commitizen": "4.2.4",
+    "cross-env": "^7.0.3",
+    "cz-customizable": "6.3.0",
+    "element-plus": "2.5.0",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-spellcheck": "^0.0.20",
+    "eslint-plugin-vue": "^9.9.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
+    "medium-zoom": "^1.0.8",
+    "pinia": "2.0.36",
+    "pinia-plugin-persistedstate": "^3.1.0",
+    "postcss": "^8.4.21",
+    "postcss-html": "^1.5.0",
+    "prettier": "^2.8.4",
+    "rimraf": "3.0.0",
+    "sass": "^1.55.0",
+    "shiki": "^0.11.1",
+    "stylelint": "^15.6.0",
+    "stylelint-config-html": "^1.1.0",
+    "stylelint-config-recess-order": "^4.0.0",
+    "stylelint-config-recommended-scss": "^9.0.1",
+    "stylelint-config-recommended-vue": "^1.4.0",
+    "stylelint-config-standard": "^30.0.1",
+    "stylelint-config-standard-scss": "^7.0.1",
+    "typescript": "4.8.4",
+    "vite": "4.3.3",
+    "vite-plugin-compression": "0.5.1",
+    "vite-plugin-dts": "3.7.3",
+    "vite-plugin-eslint": "1.8.1",
+    "vite-plugin-html": "3.2.0",
+    "vite-plugin-svg-icons": "2.0.1",
+    "vitepress": "1.3.4",
+    "vue-tsc": "1.2.0"
+  },
+  "dependencies": {
+    "@vueuse/core": "^11.1.0",
+    "@vueuse/components": "^11.1.0",
+    "axios": "^1.6.7",
+    "clipboard": "^2.0.11",
+    "lodash": "^4.17.21",
+    "rollup-plugin-visualizer": "^5.9.0",
+    "sortablejs": "^1.15.0",
+    "vue-json-viewer": "3",
+    "wangeditor": "4.7.15"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,vue}": [
+      "eslint"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "script/cz-customizable"
+    }
+  }
+}
