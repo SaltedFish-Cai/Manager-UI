@@ -56,7 +56,7 @@
 | multipleLimit   | number                                                                                                           | ❌    | 0         | `type==multiple-select` 选择的项目数， 为 `0` 则不限制 |
 | collapseTags    | boolean                                                                                                          | ❌    | true      | `type==multiple-select` 将选中值按文字的形式展示       |
 | maxCollapseTags | number                                                                                                           | ❌    | 1         | `collapseTags==true` 需要显示的 Tag 的最大数量         |
-| options         | [MElementSelectOptionType[]](/document/demo/component/m-element/readme.html#选择器选项-melementselectoptiontype) | ❌    |           | 内置选项                                               |
+| options         | [MElementSelectOptionType[]](/document/component/m-element/readme.html#选择器选项-melementselectoptiontype) | ❌    |           | 内置选项                                               |
 | size            | "default" / "large" / "small"                                                                                    | ❌    | "default" | 尺寸大小                                               |
 
 ## 远端请求选择器 (MElementRequestSelectType)
@@ -73,7 +73,7 @@
 | collapseTags    | boolean                                                                                                          | ❌    | true      | `type==multiple-select` 将选中值按文字的形式展示       |
 | maxCollapseTags | number                                                                                                           | ❌    | 1         | `collapseTags==true` 需要显示的 Tag 的最大数量         |
 | requestBy       | string[] / string                                                                                                | ❌    |           | 请求触发来源 `m-table` 使用                            |
-| options         | [MElementSelectOptionType[]](/document/demo/component/m-element/readme.html#选择器选项-melementselectoptiontype) | ❌    |           | 内置选项                                               |
+| options         | [MElementSelectOptionType[]](/document/component/m-element/readme.html#选择器选项-melementselectoptiontype) | ❌    |           | 内置选项                                               |
 | size            | "default" / "large" / "small"                                                                                    | ❌    | "default" | 尺寸大小                                               |
 
 ## 远端搜索请求选择器 (MElementOnlineSelectType)
@@ -89,7 +89,7 @@
 | multipleLimit   | number                                                                                                           | ❌    | 0         | `type==multiple-select` 选择的项目数， 为 `0` 则不限制 |
 | collapseTags    | boolean                                                                                                          | ❌    | true      | `type==multiple-select` 将选中值按文字的形式展示       |
 | maxCollapseTags | number                                                                                                           | ❌    | 1         | `collapseTags==true` 需要显示的 Tag 的最大数量         |
-| options         | [MElementSelectOptionType[]](/document/demo/component/m-element/readme.html#选择器选项-melementselectoptiontype) | ❌    |           | 内置选项                                               |
+| options         | [MElementSelectOptionType[]](/document/component/m-element/readme.html#选择器选项-melementselectoptiontype) | ❌    |           | 内置选项                                               |
 | size            | "default" / "large" / "small"                                                                                    | ❌    | "default" | 尺寸大小                                               |
 
 ### 选择器选项 (MElementSelectOptionType)
@@ -112,7 +112,7 @@
 | display         | boolean                                                                                                                  | ❌    | false     | 纯展示                                         |
 | collapseTags    | boolean                                                                                                                  | ❌    | true      | `type==multiple-*` 将选中值按文字的形式展示    |
 | maxCollapseTags | number                                                                                                                   | ❌    | 1         | `collapseTags==true` 需要显示的 Tag 的最大数量 |
-| options         | [MElementCascaderOptionType[]](/document/demo/component/m-element/readme.html#联级选择器选项-melementcascaderoptiontype) | ❌    |           | 内置选项                                       |
+| options         | [MElementCascaderOptionType[]](/document/component/m-element/readme.html#联级选择器选项-melementcascaderoptiontype) | ❌    |           | 内置选项                                       |
 | size            | "default" / "large" / "small"                                                                                            | ❌    | "default" | 尺寸大小                                       |
 
 ### 联级选择器选项 (MElementCascaderOptionType)
@@ -121,7 +121,7 @@
 | -------- | ------------------------------------------------------------------------------------------------------------------------ | ---- | ------ | -------- |
 | label    | string                                                                                                                   | ✅    |        | 选项名   |
 | value    | string / number                                                                                                          | ✅    |        | 选项值   |
-| children | [MElementCascaderOptionType[]](/document/demo/component/m-element/readme.html#联级选择器选项-melementcascaderoptiontype) | ❌    |        | 子选     |
+| children | [MElementCascaderOptionType[]](/document/component/m-element/readme.html#联级选择器选项-melementcascaderoptiontype) | ❌    |        | 子选     |
 | disabled | boolean                                                                                                                  | ❌    |        | 禁用状态 |
 | base     | object                                                                                                                   | ❌    |        | 源数据   |
 
@@ -133,7 +133,7 @@
 | prop     | string                                                                                                             | ✅    |        | 表单结果字段 key |
 | disabled | boolean                                                                                                            | ❌    |        | 禁用状态         |
 | display  | boolean                                                                                                            | ❌    | false  | 纯展示           |
-| options  | [MElementCheckBoxOptionType[]](/document/demo/component/m-element/readme.html#多选选项-melementcheckboxoptiontype) | ❌    |        | 内置选项         |
+| options  | [MElementCheckBoxOptionType[]](/document/component/m-element/readme.html#多选选项-melementcheckboxoptiontype) | ❌    |        | 内置选项         |
 
 ### 多选选项 (MElementCheckBoxOptionType)
 
@@ -151,7 +151,7 @@
 | prop     | string                                                                                                       | ✅    |           | 表单结果字段 key |
 | disabled | boolean                                                                                                      | ❌    |           | 禁用状态         |
 | display  | boolean                                                                                                      | ❌    |           | false            | 纯展示 |
-| options  | [MElementRadioOptionType[]](/document/demo/component/m-element/readme.html#单选选项-melementradiooptiontype) | ❌    |           | 内置选项         |
+| options  | [MElementRadioOptionType[]](/document/component/m-element/readme.html#单选选项-melementradiooptiontype) | ❌    |           | 内置选项         |
 | size     | "default" / "large" / "small"                                                                                | ❌    | "default" | 尺寸大小         |
 
 ### 单选选项 (MElementRadioOptionType)

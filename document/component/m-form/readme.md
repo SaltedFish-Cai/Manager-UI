@@ -141,7 +141,7 @@ function ruleFunction(rule: any, value: any, callback: any) {
 
 ## 异步更改配置项
 
-该场景使用 `resetStructure` 方法对源配置项进行修改，以支持异步参数配置，配置项的值由 [`Cell元素`](/document/demo/component/m-element/readme.html) 决定。
+该场景使用 `resetStructure` 方法对源配置项进行修改，以支持异步参数配置，配置项的值由 [`Cell元素`](/document/component/m-element/readme.html) 决定。
 
 ```typescript
   proForm.value?.resetStructure("Prop", {
@@ -226,17 +226,17 @@ BaseType 基础参数 & `CellItemType`
 
 | 单元格类型                                                                                             | 描述       |
 | ------------------------------------------------------------------------------------------------------ | ---------- |
-| [MElementInputType](/document/demo/component/m-element/readme.html#输入框-melementinputtype)           | 输入框     |
-| [MElementNumberType](/document/demo/component/m-element/readme.html#数字输入框-melementnumbertype)     | 数字输入框 |
-| [MElementSelectType](/document/demo/component/m-element/readme.html#选择器-melementselecttype)         | 选择器     |
-| [MElementCascaderType](/document/demo/component/m-element/readme.html#联级选择器-melementcascadertype) | 联级选择器 |
-| [MElementCheckBoxType](/document/demo/component/m-element/readme.html#多选-melementcheckboxtype)       | 多选       |
-| [MElementRadioType](/document/demo/component/m-element/readme.html#单选-melementradiotype)             | 单选       |
-| [MElementIconType](/document/demo/component/m-element/readme.html#icon选择-melementicontype)           | icon 选择  |
-| [MElementSwitchType](/document/demo/component/m-element/readme.html#开关-melementswitchtype)           | 开关       |
-| [MElementDateType](/document/demo/component/m-element/readme.html#时间选择器-melementdatetype)         | 时间选择器 |
-| [MElementAddressType](/document/demo/component/m-element/readme.html#地址选择器-melementaddresstype)   | 地址选择器 |
-| [MElementFileType](/document/demo/component/m-element/readme.html#文件上传-melementfiletype)           | 文件上传   |
+| [MElementInputType](/document/component/m-element/readme.html#输入框-melementinputtype)           | 输入框     |
+| [MElementNumberType](/document/component/m-element/readme.html#数字输入框-melementnumbertype)     | 数字输入框 |
+| [MElementSelectType](/document/component/m-element/readme.html#选择器-melementselecttype)         | 选择器     |
+| [MElementCascaderType](/document/component/m-element/readme.html#联级选择器-melementcascadertype) | 联级选择器 |
+| [MElementCheckBoxType](/document/component/m-element/readme.html#多选-melementcheckboxtype)       | 多选       |
+| [MElementRadioType](/document/component/m-element/readme.html#单选-melementradiotype)             | 单选       |
+| [MElementIconType](/document/component/m-element/readme.html#icon选择-melementicontype)           | icon 选择  |
+| [MElementSwitchType](/document/component/m-element/readme.html#开关-melementswitchtype)           | 开关       |
+| [MElementDateType](/document/component/m-element/readme.html#时间选择器-melementdatetype)         | 时间选择器 |
+| [MElementAddressType](/document/component/m-element/readme.html#地址选择器-melementaddresstype)   | 地址选择器 |
+| [MElementFileType](/document/component/m-element/readme.html#文件上传-melementfiletype)           | 文件上传   |
 
 ### Attribute 属性
 

@@ -40,7 +40,7 @@ const tableConfig: mTableStructureType[] = [
 
 ## 额外展示（Expand）
 
-在表格配置中添加 `expand` 一行以打开表的展开按钮，在表格内添加插槽 `expand` 以展示展开内容，可使用 [setExpandRowKey](/document/demo/component/m-table/readme.html#exposes-暴露) 设置单行展开状态
+在表格配置中添加 `expand` 一行以打开表的展开按钮，在表格内添加插槽 `expand` 以展示展开内容，可使用 [setExpandRowKey](/document/component/m-table/readme.html#exposes-暴露) 设置单行展开状态
 
 ```typescript
 const tableConfig: mTableStructureType[] = [
@@ -134,7 +134,7 @@ function Input2roleFn(data) {
 
 ## 标记（Tag）
 
-使用 [useDictionaries](/document/demo/component/md/dictionaries.html#获取字典选项-usedictionaries) 获取字典结果更快捷。
+使用 [useDictionaries](/document/component/md/dictionaries.html#获取字典选项-usedictionaries) 获取字典结果更快捷。
 
 ```typescript
 const tableConfig: mTableStructureType[] = [
@@ -228,7 +228,7 @@ const tableConfig: mTableStructureType[] = [
 | fixed      | boolean / left / right                                                                                                                                                              | ❌    | 表列固定位置                                                     |
 | search     | `SearchProps`                                                                                                                                                                       | ❌    | 顶部搜索配置 (暂未开放使用)                                      |
 | filterType | "input" / "select" / "time"                                                                                                                                                         | ❌    | 筛选时使用类型                                                   |
-| cellConfig | [BaseCellItemType](/document/demo/component/m-table/readme.html#basecellitemtype-基础类型)  &  [CellItemType](/document/demo/component/m-table/readme.html#cellitemtype-单元格类型) | ❌    | 单元格使用类型，详细配置                                         |
+| cellConfig | [BaseCellItemType](/document/component/m-table/readme.html#basecellitemtype-基础类型)  &  [CellItemType](/document/component/m-table/readme.html#cellitemtype-单元格类型) | ❌    | 单元格使用类型，详细配置                                         |
 | textWarp   | string                                                                                                                                                                              | ❌    | 单元格内文字折行依据                                             |
 | requestBy  | string / string[]                                                                                                                                                                   | ❌    | `type=='online-select' / type=='request-select'`请求数据依赖来源 |
 | useSum     | boolean                                                                                                                                                                             | ❌    | 是否计入合计内容                                                 |
@@ -243,24 +243,24 @@ const tableConfig: mTableStructureType[] = [
 
 | 单元格类型                                                                                                             | 描述               |
 | ---------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| [MElementInputType](/document/demo/component/m-element/readme.html#输入框-melementinputtype)                           | 输入框             |
-| [MElementNumberType](/document/demo/component/m-element/readme.html#数字输入框-melementnumbertype)                     | 数字输入框         |
-| [MElementSelectType](/document/demo/component/m-element/readme.html#选择器-melementselecttype)                         | 选择器             |
-| [MElementRequestSelectType](/document/demo/component/m-element/readme.html#远端请求选择器-melementrequestselecttype)   | 远端请求选择器     |
-| [MElementOnlineSelectType](/document/demo/component/m-element/readme.html#远端搜索请求选择器-melementonlineselecttype) | 远端搜索请求选择器 |
-| [MElementCascaderType](/document/demo/component/m-element/readme.html#联级选择器-melementcascadertype)                 | 联级选择器         |
-| [MElementCheckBoxType](/document/demo/component/m-element/readme.html#多选-melementcheckboxtype)                       | 多选               |
-| [MElementRadioType](/document/demo/component/m-element/readme.html#单选-melementradiotype)                             | 单选               |
-| [MElementIconType](/document/demo/component/m-element/readme.html#icon选择-melementicontype)                           | icon 选择          |
-| [MElementSwitchType](/document/demo/component/m-element/readme.html#开关-melementswitchtype)                           | 开关               |
-| [MElementDateType](/document/demo/component/m-element/readme.html#时间选择器-melementdatetype)                         | 时间选择器         |
+| [MElementInputType](/document/component/m-element/readme.html#输入框-melementinputtype)                           | 输入框             |
+| [MElementNumberType](/document/component/m-element/readme.html#数字输入框-melementnumbertype)                     | 数字输入框         |
+| [MElementSelectType](/document/component/m-element/readme.html#选择器-melementselecttype)                         | 选择器             |
+| [MElementRequestSelectType](/document/component/m-element/readme.html#远端请求选择器-melementrequestselecttype)   | 远端请求选择器     |
+| [MElementOnlineSelectType](/document/component/m-element/readme.html#远端搜索请求选择器-melementonlineselecttype) | 远端搜索请求选择器 |
+| [MElementCascaderType](/document/component/m-element/readme.html#联级选择器-melementcascadertype)                 | 联级选择器         |
+| [MElementCheckBoxType](/document/component/m-element/readme.html#多选-melementcheckboxtype)                       | 多选               |
+| [MElementRadioType](/document/component/m-element/readme.html#单选-melementradiotype)                             | 单选               |
+| [MElementIconType](/document/component/m-element/readme.html#icon选择-melementicontype)                           | icon 选择          |
+| [MElementSwitchType](/document/component/m-element/readme.html#开关-melementswitchtype)                           | 开关               |
+| [MElementDateType](/document/component/m-element/readme.html#时间选择器-melementdatetype)                         | 时间选择器         |
 
 ### Attribute 属性
 
 | 字段                | 是否必填 | 类型                                                                                           | 默认值 | 描述                                                      |
 | ------------------- | -------- | ---------------------------------------------------------------------------------------------- | ------ | --------------------------------------------------------- |
 | id                  | ✅        | string                                                                                         |        | 表格 id，同页面存在多个表格时填写，否则会导致表格推拽失效 |
-| structure           | ✅        | [mTableStructureType[]](/document/demo/component/m-table/readme.html#mtablestructuretype-结构) |        | 表格列配置项                                              |
+| structure           | ✅        | [mTableStructureType[]](/document/component/m-table/readme.html#mtablestructuretype-结构) |        | 表格列配置项                                              |
 | requestApi          | ✅        | (params, id) => object[]                                                                       |        | 表格数据来源接口                                          |
 | requestAuto         | ❌        | boolean                                                                                        | true   | 是否自动执行请求                                          |
 | requestError        | ❌        | (params) => void                                                                               |        | 表格 api 请求错误监听                                     |
@@ -277,8 +277,8 @@ const tableConfig: mTableStructureType[] = [
 | showOverflowTooltip | ❌        | boolean                                                                                        | true   | 是否使用文字超出后Tooltip提示完整内容                     |
 | embeddedToolButton  | ❌        | boolean                                                                                        | false  | 是否显示表格功能按钮嵌入式样式                            |
 | exOptions           | ❌        | object                                                                                         |        | 外置筛选依赖                                              |
-| exDependent         | ❌        | [ExDependentType](/document/demo/component/m-table/readme.html#exdependenttype-外置依赖)       |        | 外置依赖                                                  |
-| exPagination        | ❌        | [ExPaginationType](/document/demo/component/m-table/readme.html#expaginationtype-外置页码配置) |        | 外置依赖                                                  |
+| exDependent         | ❌        | [ExDependentType](/document/component/m-table/readme.html#exdependenttype-外置依赖)       |        | 外置依赖                                                  |
+| exPagination        | ❌        | [ExPaginationType](/document/component/m-table/readme.html#expaginationtype-外置页码配置) |        | 外置依赖                                                  |
 | expandAuto          | ❌        | boolean                                                                                        | false  | 是否默认打开expand折叠                                    |
 | operationSize       | ❌        | number                                                                                         | 3      | 操作内元素最大显示数量，超出放置到更多按钮                |
 | summaryConfig       | ❌        | sumText?: string;  合计文字 unitText?: string; // 单位文字                                     |        | 自定义合计参数                                            |

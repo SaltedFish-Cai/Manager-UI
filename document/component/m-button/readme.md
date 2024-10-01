@@ -46,10 +46,10 @@
 
 | 属性名        | 类型    | 可选值                                                             | 默认值  | 说明                                                               |
 | :------------ | :------ | :----------------------------------------------------------------- | :------ | :----------------------------------------------------------------- |
-| is            | string  | [样式展示](/document/demo/component/m-button/readme.html#内置样式) | —       | 内置样式选择                                                       |
+| is            | string  | [样式展示](/document/component/m-button/readme.html#内置样式) | —       | 内置样式选择                                                       |
 | type          | string  | default / primary / success / warning / danger / info / text       | default | 类型                                                               |
 | position      | string  | 'left' / 'right'                                                   | left    | Icon位置                                                           |
-| font          | string  | —                                                                  | --      | icon 图标([`m-icon`](/document/demo/component/m-icon/readme.html)) |
+| font          | string  | —                                                                  | --      | icon 图标([`m-icon`](/document/component/m-icon/readme.html)) |
 | loading       | boolean | —                                                                  | false   | 是否 `Loading` 状态                                                |
 | loadingBy     | string  | —                                                                  | --      | 自动 `Loading` 监听依赖源                                          |
 | plain         | boolean | —                                                                  | true    | 是否为朴素按钮                                                     |
