@@ -1,0 +1,29 @@
+// :root {
+//   --el-color-primary: #0288d1;
+//   --el-color-primary-dark-2: #06795e;
+//   --el-color-primary-light-1: #1aad8b;
+//   --el-color-primary-light-2: #33b698;
+//   --el-color-primary-light-3: #4dbfa5;
+//   --el-color-primary-light-4: #66c8b2;
+//   --el-color-primary-light-5: #80d2bf;
+//   --el-color-primary-light-6: #99dbcb;
+//   --el-color-primary-light-7: #b3e4d8;
+//   --el-color-primary-light-8: #ccede5;
+//   --el-color-primary-light-9: #e6f6f2;
+
+/* dark/light radial transition */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-old(root),
+.dark::view-transition-new(root) {
+  z-index: 1;
+}
+
+::view-transition-new(root),
+.dark::view-transition-old(root) {
+  z-index: 9999;
+}

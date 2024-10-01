@@ -1,0 +1,25 @@
+.title-error {
+  padding: 0px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.contrast-value {
+  padding-top: 3px;
+  position: relative;
+  color: var(--el-color-danger);
+  font-size: 14px;
+  line-height: 1.3em;
+  padding-right: 25px;
+  &::before {
+    position: absolute;
+    right: -5px;
+    font-size: 12px;
+    transform: scale(0.9);
+    display: inline-block;
+    content: "（原）";
+  }
+}
+.contrast-value__small {
+  font-size: 12px;
+}
